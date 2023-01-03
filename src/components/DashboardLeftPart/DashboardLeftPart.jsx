@@ -7,8 +7,8 @@ import emailLogo from "../../asset/emailLogo.png";
 import callLogo from "../../asset/callLogo.png";
 import moreLogo from "../../asset/moreLogo.png";
 import penLogo from "../../asset/penLogo.png";
-
 import { Button } from "@mui/material";
+import UserInfoTab from "../UserInfoTab/UserInfoTab";
 
 function DashboardLeftPart() {
   return (
@@ -81,38 +81,8 @@ function DashboardLeftPart() {
               </Button>
             </div>
            <div>
-           <div className="flex items-center border-b w-[236px] justify-center ">
-              <div className="group/item group/contact flex flex-col items-center">
-              <p className="font-[700] text-[12px] leading-[20px] pb-[10px] cursor-pointer">Contact Info</p>
-              <div className="h-1 rounded-t-[5px] w-[116px] bg-[#2142D9] group/edit group-hover/item:visible"></div>
-              </div>
-              <div className="group/item group/address flex flex-col items-center">
-              <p className="font-[700] text-[12px] leading-[20px] pb-[10px] cursor-pointer">Addess Info</p>
-              <div className="h-1 rounded-t-[5px] w-[116px] bg-[#2142D9] invisible group-hover/item:visible"></div>
-              </div>
-            </div>
-            <div className="w-full h-20 pt-[25px] flex flex-col gap-[17px]">
-              <div className="flex flex-col gap-1">
-                <p className="text-[10px] font-[500] text-[#9F9F9F]">E-mail</p>
-                <p className="text-[12px] font-[700] text-[#2B2B2B]">Pattrick@example.com</p>
-              </div>
-              <div className="flex flex-col gap-1">
-                <p className="text-[10px] font-[500] text-[#9F9F9F]">Phone</p>
-                <p className="text-[12px] font-[700] text-[#2B2B2B]">(001) 546-8528</p>
-              </div>
-              <div className="flex flex-col gap-1">
-                <p className="text-[10px] font-[500] text-[#9F9F9F]">Contact Owner</p>
-                <p className="text-[12px] font-[700] text-[#2B2B2B]">James Dean</p>
-              </div>
-              <div className="flex flex-col gap-1">
-                <p className="text-[10px] font-[500] text-[#9F9F9F]">Job Title</p>
-                <p className="text-[12px] font-[700] text-[#2B2B2B]">Software Developer</p>
-              </div>
-              <div className="flex flex-col gap-1">
-                <p className="text-[10px] font-[500] text-[#9F9F9F]">Annual Revenue</p>
-                <p className="text-[12px] font-[700] text-[#2B2B2B]">$ 100,000</p>
-              </div>
-            </div>
+           <UserInfoTab/>
+            
            </div>
           </div>
         </div>

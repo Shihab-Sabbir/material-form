@@ -9,10 +9,17 @@ import conversationLogo from "../../asset/conversationLogo.png";
 import reportLogo from "../../asset/reportLogo.png";
 import helpLogo from "../../asset/helpLogo.png";
 import settingLogo from "../../asset/settingLogo.svg";
+import { Divider, List, ListItem, ListItemText, Paper } from "@mui/material";
 
 function DashboardSidenav() {
   const navMenuItemStyle = 'flex items-center gap-[19px] text-[15px] leading-[20px] hover:bg-[#F1F0FF] hover:font-[700] hover:text-[#2142D9] px-[25px] h-[39px] rounded-[10px] cursor-pointer';
   const navMenuIconStyle = 'w-[19px] flex items-center justify-start';
+  const hoverEffect = {
+    borderRadius:'10px',
+    '&:hover': {
+     background: "#F1F0FF",
+   }
+   }
   return (
     <div className="font-[Inter] w-[260px] border h-screen bg-white">
       <div className="px-[38px] py-[16px]">
@@ -23,47 +30,47 @@ function DashboardSidenav() {
         <div>
           <p className="py-[35px] text-[#959595] text-[14px] pl-[26px]">General</p>
           <nav className="flex flex-col gap-1">
-            <div className={navMenuItemStyle}>
+            <ListItem button className={navMenuItemStyle} sx={hoverEffect}>
               <img src={dbHomeLogo}  className={navMenuIconStyle}  alt="" />
               <p>Dashboard</p>
-            </div>
-            <div className={navMenuItemStyle}>
+            </ListItem>
+            <ListItem button className={navMenuItemStyle} sx={hoverEffect}>
               <img src={campaignLogo} className={navMenuIconStyle}  alt="" />
               <p>Campaign</p>
-            </div>
-            <div className={navMenuItemStyle}>
+            </ListItem>
+            <ListItem button className={navMenuItemStyle} sx={hoverEffect}>
               <img src={contactsLogo} className={navMenuIconStyle}  alt="" />
               <p>Contacts</p>
-            </div>
-            <div className={navMenuItemStyle}>
+            </ListItem>
+            <ListItem button className={navMenuItemStyle} sx={hoverEffect}>
               <img src={analyticsLogo} className={navMenuIconStyle}  alt="" />
               <p>Analytics</p>
-            </div>
-            <div className={navMenuItemStyle}>
+            </ListItem>
+            <ListItem button className={navMenuItemStyle} sx={hoverEffect}>
               <img src={reportLogo} className={navMenuIconStyle}  alt="" />
               <p>Reports</p>
-            </div>
-            <div className={navMenuItemStyle}>
+            </ListItem>
+            <ListItem button className={navMenuItemStyle} sx={hoverEffect}>
               <img src={billingLogo} className={navMenuIconStyle}  alt="" />
               <p>Billing</p>
-            </div>
-            <div className={`${navMenuItemStyle} `}>
+            </ListItem>
+            <ListItem button className={navMenuItemStyle} sx={hoverEffect}>
               <img src={conversationLogo} className={navMenuIconStyle}  alt="" />
               <p>Conversations</p>
-            </div>
+            </ListItem>
           </nav>
         </div>
         <div>
           <p className="py-[35px] text-[#959595] pl-[26px] text-[14px]">Support</p>
           <nav className="flex flex-col">
-            <div className={navMenuItemStyle}>
+            <ListItem button className={navMenuItemStyle} sx={hoverEffect}>
               <img src={settingLogo} alt="" />
               <p>Setting</p>
-            </div>
-            <div className={navMenuItemStyle}>
+            </ListItem>
+            <ListItem button className={navMenuItemStyle} sx={hoverEffect}>
               <img src={helpLogo} alt="" />
               <p>Help Center</p>
-            </div>
+            </ListItem>
           </nav>
         </div>
       </div>
