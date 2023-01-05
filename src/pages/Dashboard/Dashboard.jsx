@@ -16,7 +16,7 @@ function Dashboard() {
        <div className='h-[70px] w-full fixed top-0 right-0 bg-white pl-[260px]'>
        <DashboadHeader/>
        </div>
-       <div className='h-full mt-[70px] flex justify-between p-[22px] bg-[#F2F7FA] gap-[26px] min-w-fit'>
+       <div className='h-full mt-[70px] flex justify-between p-[22px] bg-[#F2F7FA] gap-[26px] border overflow-hidden min-w-fit'>
        <DashboardLeftPart/>
         <DashboardMiddlePart/>
         <DashboardRightPart/>

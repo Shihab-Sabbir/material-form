@@ -21,7 +21,7 @@ function ActivityTabAccordion() {
     setExpanded(isExpanded ? panel : false);
   };
   return (
-    <div className="max-h-[685px] overflow-y-auto overflow-x-hidden activityScroll">
+    <div className="h-[667px] overflow-y-auto overflow-x-hidden activityScroll">
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
@@ -163,7 +163,7 @@ function ActivityTabAccordion() {
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
-        style={{ boxShadow: "2px 5px 14px rgba(0, 0, 0, 0.06)", marginBottom: "14px",borderRadius:'5px',maxHeight:'226px' }}
+        style={{ boxShadow: "2px 5px 14px rgba(0, 0, 0, 0.06)", marginBottom: "0",borderRadius:'5px',maxHeight:'226px' }}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "#9F9F9F" }} />}
