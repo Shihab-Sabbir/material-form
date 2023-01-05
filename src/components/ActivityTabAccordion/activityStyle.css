@@ -1,0 +1,20 @@
+/* width */
+.activityScroll::-webkit-scrollbar {
+    width: 0px;
+    height: 5px;
+  }
+  
+  /* Track */
+  .activityScroll::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .activityScroll::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  .activityScroll::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

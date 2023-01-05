@@ -24,9 +24,13 @@ function HorizontalTab() {
     alignItems: "center",
   };
   return (
-    <Box sx={{ width: "fit-content", typography: "body1",fontFamily:'Inter' }}>
-      <TabContext value={value} sx={{ height: "41px" }}>
-        <Box sx={{ background: "#ECEEF0", borderRadius: "5px" }}>
+    <Box sx={{ width: "100%", typography: "body1",fontFamily:'Inter'}}>
+      <TabContext value={value} sx={{ height: "41px" ,width: "100%",}}>
+        <Box sx={{ 
+          width: "100%",background: "#ECEEF0", borderRadius: "5px",
+                display:'flex',
+                justifyContent:'center'}}
+                >
           <TabList
             onChange={handleChange}
             sx={{
@@ -37,7 +41,7 @@ function HorizontalTab() {
                 zIndex: "0",
                 boxShadow: "2px 5px 14px rgba(0, 0, 0, 0.06)",
                 border: "1px solid #E2E2E2",
-                marginTop: "-8px",
+                marginTop: "-8px"
               },
             }}
           >
@@ -49,14 +53,40 @@ function HorizontalTab() {
             <Tab style={style} label="Meeting" value="6" />
           </TabList>
         </Box>
-        <TabPanel value="1" sx={{ padding: "0" }}>
-          <div className="mt-[31px]">
+        <TabPanel value="1" sx={{ padding: "0",width:'100%'}}>
+          <div className="mt-[31px] max-w-full mx-auto">
             <Filter />
             <p className="text-[12px] text-[#2B2B2B] font-[600] pt-[23px] pb-[14px]">Upcoming Campaign</p>
             <ActivityTabAccordion/>
           </div>
         </TabPanel>
+        <TabPanel value="2" sx={{ padding: "0",width:'100%'}}>
+          <div className="mt-[31px] max-w-full mx-auto">
+           <p className="text-center font-bols text-xl">Comming Soon ! </p>
+          </div>
+        </TabPanel>
+        <TabPanel value="3">
+        <div className="w-full h-20 flex flex-col gap-[17px]">
+              <p className='text-center font-bols text-xl'>Comming Soon ! </p>
+            </div>
+        </TabPanel>
+        <TabPanel value="4">
+        <div className="w-full h-20 flex flex-col gap-[17px]">
+              <p className='text-center font-bols text-xl'>Comming Soon ! </p>
+            </div>
+        </TabPanel>
+        <TabPanel value="5">
+        <div className="w-full h-20 flex flex-col gap-[17px]">
+              <p className='text-center font-bols text-xl'>Comming Soon ! </p>
+            </div>
+        </TabPanel>
+        <TabPanel value="6">
+        <div className="w-full h-20 flex flex-col gap-[17px]">
+              <p className='text-center font-bols text-xl'>Comming Soon ! </p>
+            </div>
+        </TabPanel>
       </TabContext>
+      
     </Box>
   );
 }

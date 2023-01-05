@@ -64,7 +64,7 @@ function DashboardLeftPart() {
                 <p className="text-[10px] text-[#696868] leading-[20px]">Log</p>
               </div>
             </div>
-            <div className="mb-[58px]">
+            <div className="mb-[15px]">
               <Button
               variant="contained"
               style={{
@@ -82,7 +82,6 @@ function DashboardLeftPart() {
             </div>
            <div>
            <UserInfoTab/>
-            
            </div>
           </div>
         </div>

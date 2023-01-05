@@ -7,16 +7,16 @@ import DashboardSidenav from '../../components/DashboardSidenav/DashboardSidenav
 
 function Dashboard() {
   return (
-    <div className='max-w-[2500px] mx-auto relative'>
+    <div className='max-w-[2000px] mx-auto relative'>
       <div className='flex items-center justify-center min-w-screen'>
       <div className='absolute top-0 left-0 z-20'>
       <DashboardSidenav/>
       </div>
-      <div className='flex-1 md:ml-[775px] lg:ml-[690px] xl:ml-[437px] 2xl:ml-[260px] h-screen flex flex-col overflow-auto min-w-fit max-w-[2360px] mx-auto'>
-       <div className='h-[70px] w-full'>
+      <div className='flex-1 ml-[260px] h-screen flex flex-col overflow-auto relative'>
+       <div className='h-[70px] w-full fixed top-0 right-0 bg-white pl-[260px]'>
        <DashboadHeader/>
        </div>
-       <div className='h-full flex justify-between p-[22px] bg-[#F2F7FA] gap-[26px] overflow-y-auto'>
+       <div className='h-full mt-[70px] flex justify-between p-[22px] bg-[#F2F7FA] gap-[26px] min-w-fit'>
        <DashboardLeftPart/>
         <DashboardMiddlePart/>
         <DashboardRightPart/>

@@ -9,7 +9,7 @@ import downArrowIcon from "../../asset/downArrowIcon.png";
 
 function DashboadHeader() {
   return (
-    <div className="h-full flex items-center pl-[46.5px] pr-[30px] justify-between">
+    <div className="h-full flex items-center pl-[46.5px] pr-[30px] justify-between min-w-full">
       <Box
         sx={{
           position: "relative",

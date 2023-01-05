@@ -62,26 +62,7 @@ const style = {
         </TabPanel>
         <TabPanel value="2">
         <div className="w-full h-20 flex flex-col gap-[17px]">
-              <div className="flex flex-col gap-1">
-                <p className="text-[10px] font-[500] text-[#9F9F9F]">E-mail</p>
-                <p className="text-[12px] font-[700] text-[#2B2B2B]">Pattrick@example.com</p>
-              </div>
-              <div className="flex flex-col gap-1">
-                <p className="text-[10px] font-[500] text-[#9F9F9F]">Phone</p>
-                <p className="text-[12px] font-[700] text-[#2B2B2B]">(001) 546-8528</p>
-              </div>
-              <div className="flex flex-col gap-1">
-                <p className="text-[10px] font-[500] text-[#9F9F9F]">Contact Owner</p>
-                <p className="text-[12px] font-[700] text-[#2B2B2B]">James Dean</p>
-              </div>
-              <div className="flex flex-col gap-1">
-                <p className="text-[10px] font-[500] text-[#9F9F9F]">Job Title</p>
-                <p className="text-[12px] font-[700] text-[#2B2B2B]">Software Developer</p>
-              </div>
-              <div className="flex flex-col gap-1">
-                <p className="text-[10px] font-[500] text-[#9F9F9F]">Annual Revenue</p>
-                <p className="text-[12px] font-[700] text-[#2B2B2B]">$ 100,000</p>
-              </div>
+              <p className='text-center'>Comming Soon ! </p>
             </div>
         </TabPanel>
       </TabContext>
